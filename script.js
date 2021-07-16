@@ -1,5 +1,5 @@
-const app = new PIXI.Application({ backgroundColor: 0x1099bb });
-document.body.appendChild(app.view);
+const app1 = new PIXI.Application({ backgroundColor: 0x1099bb });
+document.body.appendChild(app1.view);
 
 
 //Road edges and width
@@ -10,7 +10,7 @@ let roadWidth = 100;
 const texture = PIXI.Texture.from('assets/images/handle.jpg');
 const master = new PIXI.Container();
 master.name = ('Master')
-app.stage.addChild(master);
+app1.stage.addChild(master);
 
 //Initial Handle point with handle reference
 let arr = [{ obj: '', x: 10, y: 10 }, { obj: '', x: 100, y: 100 }, { obj: '', x: 200, y: 200 }, { obj: '', x: 300, y: 300 }]
@@ -18,7 +18,7 @@ let arr = [{ obj: '', x: 10, y: 10 }, { obj: '', x: 100, y: 100 }, { obj: '', x:
 //Initialize and set initial line style
 let curves = new PIXI.Graphics();
 curves.lineStyle(1, 0xFFFFFF, 1);
-app.stage.addChild(curves);
+app1.stage.addChild(curves);
 
 //add Handles to stage
 for (let i = 0; i < arr.length; i++) {
