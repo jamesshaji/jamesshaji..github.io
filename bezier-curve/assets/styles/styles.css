@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#useSVG{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    background-color: bisque;
+}
+
+
+.handles{
+    position: absolute;
+}
